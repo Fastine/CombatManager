@@ -1,0 +1,44 @@
+[
+	{
+		"Name": "Claudia",
+		"MaxHitPoints": 46,
+		"InitiativeBonus": 4,
+		"ArmorClass": 19
+	},
+	{
+		"Name": "Vickie",
+		"MaxHitPoints": 58,
+		"InitiativeBonus": 0,
+		"ArmorClass": 15
+	},
+	{
+		"Name": "Cathy",
+		"MaxHitPoints": 14,
+		"InitiativeBonus": 8,
+		"ArmorClass": 21
+	},
+	{
+		"Name": "Lakisha",
+		"MaxHitPoints": 12,
+		"InitiativeBonus": 1,
+		"ArmorClass": 14
+	},
+	{
+		"Name": "Juarez",
+		"MaxHitPoints": 39,
+		"InitiativeBonus": 2,
+		"ArmorClass": 12
+	},
+	{
+		"Name": "Campos",
+		"MaxHitPoints": 96,
+		"InitiativeBonus": 5,
+		"ArmorClass": 14
+	},
+	{
+		"Name": "Riley",
+		"MaxHitPoints": 41,
+		"InitiativeBonus": 8,
+		"ArmorClass": 15
+	}
+]
