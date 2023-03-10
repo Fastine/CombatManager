@@ -24,7 +24,11 @@
 						"tsConfig": "tsconfig.app.json",
 						"inlineStyleLanguage": "sass",
 						"assets": ["src/favicon.ico", "src/assets"],
-						"styles": ["src/styles.sass"],
+						"styles": [
+							"node_modules/bootstrap/dist/css/bootstrap.min.css",
+							"node_modules/bootswatch/dist/darkly/bootstrap.css",
+							"src/styles.sass"
+						],
 						"scripts": []
 					},
 					"configurations": {
