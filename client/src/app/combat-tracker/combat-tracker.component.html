@@ -1,0 +1,39 @@
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th
+				scope="col"
+				style="width: 10%"
+			>
+				Initiative
+			</th>
+			<th scope="col">Name</th>
+			<th scope="col">HP</th>
+			<th
+				scope="col"
+				style="width: 10%"
+			>
+				AC
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr
+			class="table-primary"
+			*ngFor="let playerCombatant of playerCombatants"
+		>
+			<td>{{ playerCombatant.initiativeBonus }}</td>
+			<td>{{ playerCombatant.name }}</td>
+			<td>
+				<button class="btn btn-danger btn-sm me-1 py-0 px-1">
+					<i class="fa fa-minus fa-sm"></i>
+				</button>
+				{{ playerCombatant.currentHitPoints }} / {{ playerCombatant.maxHitPoints }}
+				<button class="btn btn-success btn-sm ms-1 py-0 px-1">
+					<i class="fa fa-plus fa-sm"></i>
+				</button>
+			</td>
+			<td>{{ playerCombatant.armorClass }}</td>
+		</tr>
+	</tbody>
+</table>
