@@ -1,19 +1,30 @@
-<table class="table table-hover">
+<table class="table table-hover text-center">
 	<thead>
 		<tr>
 			<th
 				scope="col"
 				style="width: 10%"
 			>
+				<button
+					class="btn btn-primary btn-sm me-1 py-1 px-2"
+					(click)="sortCombatantsByInitiative()"
+				>
+					<i class="fa fa-play"></i>
+				</button>
 				Initiative
 			</th>
 			<th scope="col">Name</th>
-			<th scope="col">HP</th>
+			<th
+				scope="col"
+				style="width: 15%"
+			>
+				<i class="fa fa-heart"></i>
+			</th>
 			<th
 				scope="col"
 				style="width: 10%"
 			>
-				AC
+				<i class="fa fa-shield"></i>
 			</th>
 		</tr>
 	</thead>
@@ -24,15 +35,7 @@
 		>
 			<td>{{ playerCombatant.initiativeBonus }}</td>
 			<td>{{ playerCombatant.name }}</td>
-			<td>
-				<button class="btn btn-danger btn-sm me-1 py-0 px-1">
-					<i class="fa fa-minus fa-sm"></i>
-				</button>
-				{{ playerCombatant.currentHitPoints }} / {{ playerCombatant.maxHitPoints }}
-				<button class="btn btn-success btn-sm ms-1 py-0 px-1">
-					<i class="fa fa-plus fa-sm"></i>
-				</button>
-			</td>
+			<td>{{ playerCombatant.currentHitPoints }} / {{ playerCombatant.maxHitPoints }}</td>
 			<td>{{ playerCombatant.armorClass }}</td>
 		</tr>
 	</tbody>
